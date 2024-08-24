@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accordion</title>
+    <STYLE>
+        .accordion {
+            width: 100%;
+            max-width: 600px;
+            margin: 20px auto;
+            border: 3px solid #6bd8f1;
+            border-radius: 4px;
+            box-shadow: 0 2px 10px rgba(5, 5, 5, 0.1);
+        }
+        
+        .accordion-item {
+            border-bottom: 2px solid #b11212;
+        }
+        
+        .accordion-header {
+            width: 100%;
+            padding: 15px;
+            font-size: 18px;
+            text-align: left;
+            background-color: #140b86;
+            color: rgb(243, 240, 240);
+            border: none;
+            outline: none;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: background-color 0.3s ease;
+        }
+        
+        .accordion-header:hover {
+            background-color: #030c17;
+        }
+        
+        .accordion-content {
+            padding: 15px;
+            display: none;
+            background-color: #4730ca;
+            color: #ccd6e2;
+        }
+        
+        .accordion-content p {
+            margin: 0;
+        }
+        
+        .arrow {
+            transition: transform 0.3s ease;
+        }
+        
+        .rotate {
+            transform: rotate(180deg);
+        }
+        </STYLE>
+</head>
+<body>
+
+<div class="accordion">
+    <div class="accordion-item">
+        <button class="accordion-header" onclick="toggleAccordion(this)">
+            Deepthi
+            <span class="arrow">&#9660;</span>
+        </button>
+        <div class="accordion-content">
+            <p>"Deepthi" or "Deepthi": The name is derived from the Sanskrit word (dīpti), which means "light," "brightness," 
+                "radiance," or "glow." It signifies someone who brings light, illumination, or brilliance, often symbolizing knowledge, wisdom, and positivity.
+                Thus, the name "Deepthi" conveys the idea of being a source of light and brightness, 
+                both literally and metaphorically, representing a person who brings positivity and clarity to those around them..</p>
+        </div>
+    </div>
+    <div class="accordion-item">
+        <button class="accordion-header" onclick="toggleAccordion(this)">
+            Indu
+            <span class="arrow">&#9660;</span>
+        </button>
+        <div class="accordion-content">
+            <p>Indu means "moon" in Sanskrit.
+                The moon is often associated with calmness, serenity, beauty, and purity in various cultures,
+                 especially in Indian tradition. It is also seen as a symbol of gentleness and a soothing presence. 
+                 Because of these associations, the name "Indu" often conveys qualities like tranquility, elegance, and grace.
+                </p>
+        </div>
+    </div>
+    <div class="accordion-item">
+        <button class="accordion-header" onclick="toggleAccordion(this)">
+            Roopa
+            <span class="arrow">&#9660;</span>
+        </button>
+        <div class="accordion-content">
+            <p>Roopa means "form," "shape," or "appearance" in Sanskrit. It is often associated with beauty, 
+                
+                particularly physical beauty or the pleasing form of something.
+                In a broader sense, "Roopa" can also signify the essence or nature of a person or thing, particularly in a visual or aesthetic context.
+                 The name often conveys the idea of someone who is beautiful, graceful, or has a pleasing appearance.
+                  It may also be interpreted as representing the inner beauty or the true essence of a person.</p>
+        </div>
+    </div>
+</div>
+
+<script src="RESPONSIVE.JS"></script>
+</body>
+</html>
